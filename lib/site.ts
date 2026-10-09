@@ -3,7 +3,7 @@ export const site = {
   shortName: "Connect Pro",
   domain:
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://whatsappapi-connect-pro-codecraftma.vercel.app",
+    "https://whatsappapi2nd-plan-las.vercel.app",
   tagline: "WhatsApp Business Platform onboarding, campaigns and automation",
   description:
     "Connect customer-owned WhatsApp Business Platform accounts through Meta Embedded Signup, manage conversations and contacts, run consented template campaigns, and automate inbound replies from one dashboard.",
