@@ -26,7 +26,11 @@ jobs:
 
       - name: Replace destination with hardened source
         run: |
-          rsync -a --delete --exclude='.git' /tmp/source/ ./
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='.github/workflows/' \
+            /tmp/source/ ./
+          rm -f .github/workflows/import-hardened-source.yml
 
       - name: Commit imported source
         run: |
