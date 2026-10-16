@@ -16,10 +16,10 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2.5">
               <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-[#2ee06f] to-[#075E54] shadow-glow">
-                <Icon.whatsapp className="h-5 w-5 text-white" />
+                <Icon.inbox className="h-5 w-5 text-white" />
               </span>
               <span className="font-display text-[15px] font-bold">
-                WhatsApp <span className="gradient-text">Connect Pro</span>
+                Codecraft <span className="gradient-text">Messaging Hub</span>
               </span>
             </Link>
             <p className="muted mt-4 max-w-sm text-sm leading-relaxed">
@@ -48,9 +48,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-6 text-sm muted sm:flex-row" style={{ borderColor: "var(--line)" }}>
-          <p>© 2026 WhatsApp Connect Pro · Operated by Codecraft Marketing.</p>
+          <p>© 2026 Codecraft Messaging Hub · Operated by Codecraft Marketing.</p>
           <p className="max-w-xl text-center text-xs sm:text-right">
-            WhatsApp Connect Pro is not Meta, WhatsApp, or an official Meta/WhatsApp product and is not endorsed by Meta Platforms, Inc. WhatsApp and Meta are trademarks of their respective owners.
+            Codecraft Messaging Hub is not Meta, WhatsApp, or an official Meta/WhatsApp product and is not endorsed by Meta Platforms, Inc. WhatsApp and Meta are trademarks of their respective owners.
           </p>
         </div>
       </div>

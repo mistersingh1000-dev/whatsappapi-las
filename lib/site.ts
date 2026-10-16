@@ -1,6 +1,6 @@
 export const site = {
-  name: "WhatsApp Connect Pro",
-  shortName: "Connect Pro",
+  name: "Codecraft Messaging Hub",
+  shortName: "Messaging Hub",
   domain:
     process.env.NEXT_PUBLIC_SITE_URL ||
     "https://whatsappapi2nd-plan-las.vercel.app",
@@ -10,7 +10,7 @@ export const site = {
   email: "mistersingh1000@gmail.com",
   phone: "+91 70097 32517",
   whatsapp: "917009732517",
-  whatsappMessage: "Hi, I am interested in the WhatsApp Connect Pro platform.",
+  whatsappMessage: "Hi, I am interested in the Codecraft Messaging Hub platform.",
 
   // Manual UPI fallback. Automatic Razorpay checkout is used when configured.
   upiId: "9501216365@mbk",
@@ -101,7 +101,7 @@ export const signupSteps = [
   {
     n: 1,
     title: "Create your account",
-    desc: "Register for WhatsApp Connect Pro and start the 7-day platform trial.",
+    desc: "Register for Codecraft Messaging Hub and start the 7-day platform trial.",
   },
   {
     n: 2,
@@ -144,7 +144,7 @@ export const faqs = [
   },
   {
     q: "Can I send bulk or marketing messages?",
-    a: "Business-initiated messaging must follow Meta's current opt-in, template, category and policy requirements. WhatsApp Connect Pro automatically excludes contacts without recorded marketing opt-in and contacts marked Do Not Message from campaigns.",
+    a: "Business-initiated messaging must follow Meta's current opt-in, template, category and policy requirements. Codecraft Messaging Hub automatically excludes contacts without recorded marketing opt-in and contacts marked Do Not Message from campaigns.",
   },
   {
     q: "How does the chatbot work?",
@@ -152,7 +152,7 @@ export const faqs = [
   },
   {
     q: "Are Meta messaging charges included in the platform price?",
-    a: "No. The prices shown are for WhatsApp Connect Pro platform access. WhatsApp Business Platform usage charges billed by Meta are separate and depend on the customer's own account activity and Meta's current pricing.",
+    a: "No. The prices shown are for Codecraft Messaging Hub platform access. WhatsApp Business Platform usage charges billed by Meta are separate and depend on the customer's own account activity and Meta's current pricing.",
   },
   {
     q: "How are subscriptions activated?",

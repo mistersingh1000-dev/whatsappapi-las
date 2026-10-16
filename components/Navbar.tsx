@@ -31,10 +31,10 @@ export default function Navbar() {
         <nav className="container-px flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5">
             <span className="relative grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-[#2ee06f] to-[#075E54] text-ink shadow-glow">
-              <Icon.whatsapp className="h-5 w-5 text-white" />
+              <Icon.inbox className="h-5 w-5 text-white" />
             </span>
             <span className="font-display text-[15px] font-bold leading-tight">
-              WhatsApp <span className="gradient-text">Connect Pro</span>
+              Codecraft <span className="gradient-text">Messaging Hub</span>
             </span>
           </Link>
 

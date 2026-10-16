@@ -3,7 +3,6 @@ import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { site } from "@/lib/site";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display", display: "swap" });
@@ -13,22 +12,22 @@ const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", displ
 export const metadata: Metadata = {
   metadataBase: new URL(site.domain),
   title: {
-    default: "WhatsApp Cloud API Dashboard | Embedded Signup",
-    template: "%s | WhatsApp Connect Pro",
+    default: "Business Messaging Dashboard | API Integration",
+    template: "%s | Codecraft Messaging Hub",
   },
   description: site.description,
   keywords: [
     "WhatsApp Business Platform",
     "WhatsApp Cloud API",
     "Meta Embedded Signup",
-    "WhatsApp API Dashboard",
+    "Business messaging dashboard",
     "WhatsApp Webhooks",
     "WhatsApp Conversation Inbox",
     "WhatsApp Business Integration",
   ],
   authors: [{ name: site.name }],
   openGraph: {
-    title: "WhatsApp Cloud API Dashboard | Embedded Signup",
+    title: "Business Messaging Dashboard | API Integration",
     description: site.description,
     url: site.domain,
     siteName: site.name,
@@ -36,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "WhatsApp Cloud API Dashboard | Embedded Signup",
+    title: "Business Messaging Dashboard | API Integration",
     description: site.description,
   },
   robots: { index: true, follow: true },
@@ -70,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <WhatsAppFloat />
+
       </body>
     </html>
   );

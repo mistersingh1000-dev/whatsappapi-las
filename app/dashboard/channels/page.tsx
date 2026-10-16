@@ -19,7 +19,7 @@ export default function ChannelsPage() {
       <div className="mt-8 grid gap-5 lg:grid-cols-2">
         <div className="rounded-3xl border-2 border-emerald/70 bg-emerald/[0.04] p-6">
           <div className="flex items-start gap-4">
-            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-emerald/10 text-emerald"><Icon.whatsapp className="h-6 w-6" /></span>
+            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-emerald/10 text-emerald"><Icon.inbox className="h-6 w-6" /></span>
             <div>
               <p className="text-lg font-bold">Embedded Signup</p>
               <p className="muted mt-1 text-sm">Recommended customer onboarding</p>

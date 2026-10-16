@@ -72,10 +72,10 @@ export default function DashboardShell({ children }: { children: React.ReactNode
     <div className="flex h-full flex-col bg-white text-slate-900 dark:bg-[#101714] dark:text-white">
       <div className="flex items-center gap-3 border-b px-5 py-5 dark:border-white/10">
         <span className="grid h-11 w-11 place-items-center rounded-2xl bg-[#16a66a] text-white shadow-lg">
-          <Icon.whatsapp className="h-6 w-6" />
+          <Icon.inbox className="h-6 w-6" />
         </span>
         <div className="min-w-0">
-          <p className="font-display text-sm font-bold leading-tight">WhatsApp Connect Pro</p>
+          <p className="font-display text-sm font-bold leading-tight">Codecraft Messaging Hub</p>
           <p className="mt-0.5 text-xs text-slate-500 dark:text-white/50">Business API Workspace</p>
         </div>
       </div>
@@ -153,7 +153,7 @@ export default function DashboardShell({ children }: { children: React.ReactNode
               <Icon.menu className="h-5 w-5" />
             </button>
             <div>
-              <p className="text-sm font-semibold">WhatsApp Workspace</p>
+              <p className="text-sm font-semibold">Messaging Workspace</p>
               <p className="hidden text-xs text-slate-500 sm:block dark:text-white/45">Embedded Signup · Automation · Campaigns</p>
             </div>
           </div>

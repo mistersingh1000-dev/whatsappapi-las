@@ -27,17 +27,17 @@ export default function HomePage() {
             <Reveal>
               <span className="eyebrow">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald" />
-                Independent WhatsApp Business Platform software
+                Independent business messaging software
               </span>
             </Reveal>
             <Reveal delay={80}>
               <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-                Manage customer conversations with the <span className="gradient-text">WhatsApp Business Platform Cloud API</span>
+                Manage customer conversations with an <span className="gradient-text">independent messaging dashboard</span>
               </h1>
             </Reveal>
             <Reveal delay={160}>
               <p className="muted mt-5 max-w-xl text-base leading-relaxed sm:text-lg">
-                WhatsApp Connect Pro is independent software operated by Codecraft Marketing. Connect a business-owned WhatsApp account through Meta-hosted Embedded Signup, receive messages and delivery events, manage contacts and conversations, and send compliant support or approved template messages from one dashboard.
+                Codecraft Messaging Hub is independent software operated by Codecraft Marketing. Connect a business-owned WhatsApp account through Meta-hosted Embedded Signup, receive messages and delivery events, manage contacts and conversations, and send compliant support or approved template messages from one dashboard.
               </p>
             </Reveal>
             <Reveal delay={240}>
@@ -72,7 +72,7 @@ export default function HomePage() {
 
         <div className="border-y py-5" style={{ borderColor: "var(--line)" }}>
           <div className="container-px flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm muted">
-            <span className="text-xs uppercase tracking-[0.18em]">Built for Meta Cloud API</span>
+            <span className="text-xs uppercase tracking-[0.18em]">Compatible with Meta Cloud API</span>
             <span className="hidden h-4 w-px bg-current opacity-20 sm:block" />
             <span>Webhooks</span>
             <span>Template sending</span>
@@ -144,7 +144,7 @@ export default function HomePage() {
             />
             <div className="mt-6 space-y-3 text-sm">
               <p className="flex items-center gap-3">
-                <Icon.whatsapp className="h-5 w-5 text-emerald" /> WhatsApp onboarding support
+                <Icon.inbox className="h-5 w-5 text-emerald" /> WhatsApp onboarding support
               </p>
               <p className="flex items-center gap-3">
                 <Icon.shield className="h-5 w-5 text-emerald" /> Meta-hosted Embedded Signup connection

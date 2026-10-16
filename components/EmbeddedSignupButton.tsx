@@ -169,7 +169,7 @@ export default function EmbeddedSignupButton({ onConnected }: { onConnected?: ()
           title={ready ? "Open Meta Embedded Signup" : "Meta Embedded Signup is being configured"}
           className="btn-primary shrink-0 bg-[#1877F2] bg-none text-white disabled:cursor-not-allowed disabled:opacity-40"
         >
-          <Icon.facebook className="h-5 w-5" />
+          <Icon.link className="h-5 w-5" />
           Connect WhatsApp
         </button>
       </div>
@@ -184,7 +184,7 @@ export default function EmbeddedSignupButton({ onConnected }: { onConnected?: ()
         <div className="mt-5 rounded-2xl border border-amber-500/40 bg-amber-500/[0.07] px-4 py-3">
           <p className="text-sm font-semibold text-amber-300">Meta Embedded Signup is not enabled yet</p>
           <p className="muted mt-1.5 text-sm leading-relaxed">
-            The site administrator must complete the Meta Business app and Embedded Signup configuration first. Once enabled, this button opens the official Meta popup directly.
+            The site administrator must complete the Meta Business app and Embedded Signup configuration first. Once enabled, this button opens the Meta-hosted popup directly.
           </p>
         </div>
       )}
