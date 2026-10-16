@@ -5,7 +5,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "WhatsApp API Setup — Meta Embedded Signup",
+  title: "Business Messaging API Setup — Meta Embedded Signup",
   description:
     "Connect a customer-owned WhatsApp Business Platform account through Meta Embedded Signup without asking customers to copy API credentials.",
 };
@@ -30,7 +30,7 @@ const customerReady = [
 ];
 
 const embeddedSteps = [
-  { n: 1, title: "Open your dashboard", body: "Sign in to WhatsApp Connect Pro and tap Connect WhatsApp." },
+  { n: 1, title: "Open your dashboard", body: "Sign in to Codecraft Messaging Hub and tap Connect WhatsApp." },
   { n: 2, title: "Meta popup opens", body: "Continue with Facebook inside Meta's hosted Embedded Signup window." },
   { n: 3, title: "Choose business assets", body: "Select or create the correct Business Portfolio, WhatsApp Business Account and phone number." },
   { n: 4, title: "Complete Meta checks", body: "Finish any OTP, business verification, number eligibility or permission step Meta requires." },
@@ -87,7 +87,7 @@ export default function ApiSetupPage() {
   return (
     <>
       <PageHeader
-        eyebrow="WhatsApp API Setup"
+        eyebrow="Business Messaging API Setup"
         title={<>Connect through <span className="gradient-text">Meta Embedded Signup</span></>}
         subtitle="Customers use one official Meta-hosted popup. They do not need to copy App IDs, WABA IDs, Phone Number IDs or access tokens into the dashboard."
       />

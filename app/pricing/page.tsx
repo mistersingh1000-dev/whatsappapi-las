@@ -8,7 +8,7 @@ import { Icon } from "@/components/Icons";
 export const metadata: Metadata = {
   title: "Pricing — WhatsApp Cloud API Platform Plans",
   description:
-    "Platform subscription plans for WhatsApp Connect Pro. Meta usage charges, if applicable, are separate from the platform subscription.",
+    "Platform subscription plans for Codecraft Messaging Hub. Meta usage charges, if applicable, are separate from the platform subscription.",
 };
 
 const compare = [
@@ -45,7 +45,7 @@ export default function PricingPage() {
       <section className="container-px py-12">
         <PricingCards />
         <p className="muted mx-auto mt-8 max-w-2xl text-center text-xs">
-          Prices are for WhatsApp Connect Pro platform access. Meta may bill WhatsApp Business Platform usage separately. Secure online payment activates automatically when Razorpay is configured; manual UPI with admin verification remains available as a fallback.
+          Prices are for Codecraft Messaging Hub platform access. Meta may bill WhatsApp Business Platform usage separately. Secure online payment activates automatically when Razorpay is configured; manual UPI with admin verification remains available as a fallback.
         </p>
       </section>
 

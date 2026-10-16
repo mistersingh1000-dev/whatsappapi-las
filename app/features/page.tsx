@@ -5,9 +5,9 @@ import SignupFlow from "@/components/SignupFlow";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Features — WhatsApp Cloud API Dashboard",
+  title: "Features — Messaging API Dashboard",
   description:
-    "Explore launch-ready WhatsApp Connect Pro capabilities: Meta Cloud API connection, Embedded Signup, conversation inbox, contacts, signed webhooks and account analytics.",
+    "Explore launch-ready Codecraft Messaging Hub capabilities: Meta Cloud API connection, Embedded Signup, conversation inbox, contacts, signed webhooks and account analytics.",
 };
 
 export default function FeaturesPage() {
