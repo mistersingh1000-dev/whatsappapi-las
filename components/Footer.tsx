@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { footerLinks, site } from "@/lib/site";
 import { Icon } from "./Icons";
 
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname.startsWith("/dashboard") || pathname.startsWith("/admin")) return null;
+
   return (
     <footer className="relative mt-24 border-t" style={{ borderColor: "var(--line)" }}>
       <div className="container-px py-14">
@@ -23,9 +29,7 @@ export default function Footer() {
               We never ask for your Facebook password, Facebook OTP, WhatsApp OTP, Meta access token, or card PIN over chat, email, or support messages.
             </p>
             <div className="mt-5 flex items-center gap-3 text-sm">
-              <a href={`mailto:${site.email}`} className="muted hover:text-emerald">
-                {site.email}
-              </a>
+              <a href={`mailto:${site.email}`} className="muted hover:text-emerald">{site.email}</a>
             </div>
           </div>
 
@@ -35,9 +39,7 @@ export default function Footer() {
               <ul className="mt-4 space-y-2.5">
                 {links.map((l) => (
                   <li key={l.label}>
-                    <Link href={l.href} className="text-sm muted transition-colors hover:text-emerald">
-                      {l.label}
-                    </Link>
+                    <Link href={l.href} className="text-sm muted transition-colors hover:text-emerald">{l.label}</Link>
                   </li>
                 ))}
               </ul>
