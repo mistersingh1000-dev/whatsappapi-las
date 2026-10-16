@@ -20,6 +20,13 @@ export type AppUser = {
   wa_registration_pin?: string | null;
   wa_registration_error?: string | null;
   wa_connected_at?: string | null;
+  // Optional workspace/company profile fields.
+  company_name?: string | null;
+  company_phone?: string | null;
+  company_website?: string | null;
+  company_city?: string | null;
+  company_industry?: string | null;
+  company_address?: string | null;
   created_at: string; // ISO
 };
 
