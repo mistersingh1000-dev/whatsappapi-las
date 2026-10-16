@@ -4,7 +4,7 @@ export const site = {
   domain:
     process.env.NEXT_PUBLIC_SITE_URL ||
     "https://whatsappapi2nd-plan-las.vercel.app",
-  tagline: "WhatsApp Business Platform onboarding, campaigns and automation",
+  tagline: "Independent business messaging, onboarding and automation",
   description:
     "Connect customer-owned WhatsApp Business Platform accounts through Meta Embedded Signup, manage conversations and contacts, run consented template campaigns, and automate inbound replies from one dashboard.",
   email: "mistersingh1000@gmail.com",
