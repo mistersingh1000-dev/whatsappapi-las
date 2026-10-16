@@ -1,4 +1,4 @@
-# WhatsApp Connect Pro
+# Codecraft Messaging Hub
 
 A premium, conversion-focused marketing site for an **official WhatsApp Business API provider**, built with Next.js 15 (App Router), TypeScript and Tailwind CSS. Includes Meta Embedded Signup integration, a dashboard demo, pricing with Razorpay placeholders, and full SEO.
 
@@ -57,7 +57,7 @@ Until Meta keys are set, the Embedded Signup button runs in **demo mode**.
 **GitHub**
 
 ```bash
-git init && git add . && git commit -m "WhatsApp Connect Pro"
+git init && git add . && git commit -m "Codecraft Messaging Hub"
 git branch -M main
 git remote add origin https://github.com/<you>/whatsapp-connect-pro.git
 git push -u origin main

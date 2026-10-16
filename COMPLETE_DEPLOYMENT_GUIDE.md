@@ -1,4 +1,4 @@
-# WhatsApp Connect Pro — Complete Deployment Guide
+# Codecraft Messaging Hub — Complete Deployment Guide
 
 ## ✅ What's Built (Days 1-7)
 
