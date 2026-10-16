@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactManager from "@/components/ContactManager";
 
 export const metadata: Metadata = {
-  title: "Contacts — WhatsApp Connect Pro",
+  title: "Contacts — Codecraft Messaging Hub",
   description: "Manage your WhatsApp contacts",
 };
 

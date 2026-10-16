@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import AnalyticsDashboard from "@/components/AnalyticsDashboard";
 
 export const metadata: Metadata = {
-  title: "Analytics — WhatsApp Connect Pro",
+  title: "Analytics — Codecraft Messaging Hub",
   description: "Your chat analytics and metrics",
 };
 
