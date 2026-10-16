@@ -12,7 +12,7 @@ type Msg = {
 
 const script: Msg[] = [
   { id: 1, side: "out", text: "Your OTP is 488 213. Valid for 5 minutes.", time: "10:24", kind: "otp" },
-  { id: 2, side: "in", text: "Thanks! Just sample ✅", time: "10:24" },
+  { id: 2, side: "in", text: "Thanks! Message received ✅", time: "10:24" },
   { id: 3, side: "out", text: "🎉 Diwali Sale is live — flat 30% off, today only.", time: "10:25", kind: "campaign" },
   { id: 4, side: "in", text: "Do you ship to Pune?", time: "10:26", kind: "support" },
   { id: 5, side: "out", text: "Yes! Free delivery on orders above ₹999.", time: "10:26", kind: "support" },
@@ -60,7 +60,7 @@ export default function HeroChat() {
             <p className="text-[11px] text-white/70">example customer</p>
           </div>
           <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-white/15 px-2 py-0.5 text-[10px] font-medium">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#34ff8f]" /> verified
+            <span className="h-1.5 w-1.5 rounded-full bg-[#34ff8f]" /> demo
           </span>
         </div>
 
