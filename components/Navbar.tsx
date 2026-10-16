@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { nav, site } from "@/lib/site";
+import { nav } from "@/lib/site";
 import { Icon } from "./Icons";
 import ThemeToggle from "./ThemeToggle";
 
@@ -20,12 +20,12 @@ export default function Navbar() {
 
   useEffect(() => setOpen(false), [pathname]);
 
+  if (pathname.startsWith("/dashboard") || pathname.startsWith("/admin")) return null;
+
   return (
     <header className="sticky top-0 z-50">
       <div
-        className={`transition-all duration-300 ${
-          scrolled ? "glass shadow-card" : ""
-        }`}
+        className={`transition-all duration-300 ${scrolled ? "glass shadow-card" : ""}`}
         style={{ borderBottom: scrolled ? "1px solid var(--glass-line)" : "1px solid transparent" }}
       >
         <nav className="container-px flex h-16 items-center justify-between">
@@ -45,9 +45,7 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
-                    active ? "text-emerald" : "muted hover:text-emerald"
-                  }`}
+                  className={`rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${active ? "text-emerald" : "muted hover:text-emerald"}`}
                 >
                   {item.label}
                 </Link>
@@ -57,12 +55,8 @@ export default function Navbar() {
 
           <div className="flex items-center gap-2">
             <ThemeToggle />
-            <Link href="/login" className="btn-ghost hidden h-10 px-4 py-0 sm:inline-flex">
-              Login
-            </Link>
-            <Link href="/signup" className="btn-primary hidden h-10 px-4 py-0 sm:inline-flex">
-              Free trial
-            </Link>
+            <Link href="/login" className="btn-ghost hidden h-10 px-4 py-0 sm:inline-flex">Login</Link>
+            <Link href="/signup" className="btn-primary hidden h-10 px-4 py-0 sm:inline-flex">Free trial</Link>
             <button
               onClick={() => setOpen((v) => !v)}
               aria-label="Toggle menu"
@@ -79,13 +73,7 @@ export default function Navbar() {
         <div className="glass border-t lg:hidden" style={{ borderColor: "var(--glass-line)" }}>
           <div className="container-px flex flex-col gap-1 py-4">
             {nav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-xl px-3 py-2.5 text-sm font-medium hover:bg-emerald/10"
-              >
-                {item.label}
-              </Link>
+              <Link key={item.href} href={item.href} className="rounded-xl px-3 py-2.5 text-sm font-medium hover:bg-emerald/10">{item.label}</Link>
             ))}
             <div className="mt-2 flex gap-2">
               <Link href="/login" className="btn-ghost flex-1">Login</Link>
