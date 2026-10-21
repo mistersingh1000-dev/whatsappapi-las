@@ -1,0 +1,36 @@
+name: Production Route Smoke Test
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check public pages and Next.js 404 fallback
+        shell: bash
+        env:
+          BASE_URL: https://whatsappapi2nd-plan-las.vercel.app
+        run: |
+          set -euo pipefail
+          failed=0
+          for path in / /features /pricing /api-setup /embedded-signup /contact /faq /privacy /terms /robots.txt /sitemap.xml; do
+            body="$(mktemp)"
+            status="$(curl -sSL --max-time 25 --retry 2 -o "$body" -w '%{http_code}' "${BASE_URL}${path}")" || status="000"
+            echo "$path HTTP $status"
+            if [[ "$status" != "200" ]]; then
+              echo "::error::Route $path returned HTTP $status"
+              failed=1
+            elif grep -Eqi '404[[:space:]]*\\|[[:space:]]*This page could not be found|NEXT_NOT_FOUND' "$body"; then
+              echo "::error::Route $path appears to render a Next.js 404"
+              failed=1
+            fi
+            rm -f "$body"
+          done
+          exit "$failed"
